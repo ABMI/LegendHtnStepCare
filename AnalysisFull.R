@@ -442,6 +442,13 @@ Strategus::uploadResults(
 
 ## ShinyViewer
 
+# PNG rendering (if needed)
+options(
+  bitmapType = "cairo",
+  shiny.useragg = TRUE,
+  shiny.usecairo = TRUE
+)
+
 shinyConfig <- initializeModuleConfig() |>
   addModuleConfig(
     createDefaultAboutConfig()
